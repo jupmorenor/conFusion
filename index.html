@@ -47,8 +47,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid" alt="logo">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <a href="#reserve" class="btn btn-warning btn-sm btn-block">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -61,7 +64,7 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthappizza">
+                    <img src="img/uthappizza.png" class="d-flex mr-3 img img-thumbnail align-self-center" alt="Uthappizza">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
@@ -76,8 +79,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img src="img/buffet.png" class="d-flex ml-3 img img-thumbnail align-self-center" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -87,12 +95,66 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="img/alberto.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="alberto">
+                    <img src="img/alberto.png" class="d-flex mr-3 img img-thumbnail align-self-center" alt="alberto">
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center" id="reserve">
+            <div class="col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <form>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-md-3">
+                                    Number of Guests
+                                </dt>
+                                <dd class="col-md-9">
+                                    <div class="form-check-inline form-group">
+                                        <label class="form-check-label  mr-3">
+                                            <input type="radio" class="form-check-input" value="1" />1
+                                        </label>
+                                        <label class="form-check-label  mr-3">
+                                            <input type="radio" class="form-check-input" value="2" />2
+                                        </label>
+                                        <label class="form-check-label  mr-3">
+                                            <input type="radio" class="form-check-input" value="3" />3
+                                        </label>
+                                        <label class="form-check-label  mr-3">
+                                            <input type="radio" class="form-check-input" value="4" />4
+                                        </label>
+                                        <label class="form-check-label  mr-3">
+                                            <input type="radio" class="form-check-input" value="5" />5
+                                        </label>
+                                        <label class="form-check-label  mr-3">
+                                            <input type="radio" class="form-check-input" value="6" />6
+                                        </label>
+                                    </div>
+                                </dd>
+                                <dt class="col-md-3">
+                                    Date and Time
+                                </dt>
+                                <dd class="col-md-9">
+                                    <div class="form-group row">
+                                        <input type="text" class="form-control col-10 col-sm-4 ml-3" id="lastname" name="lastname" placeholder="Date" />
+                                        <input type="text" class="form-control col-10 col-sm-4 ml-3" id="lastname" name="lastname" placeholder="Time" />
+                                    </div>
+                                </dd>
+                                <dt class="col-md-3">
+                                    &nbsp;
+                                </dt>
+                                <dd class="col-md-9">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
