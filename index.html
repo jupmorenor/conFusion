@@ -166,7 +166,7 @@
                     <img src="img/logo.png" class="img-fluid" alt="logo">
                 </div>
                 <div class="col-12 col-sm-3">
-                    <a id="reserve-button" class="btn btn-warning btn-sm btn-block" >Reserve Table</a>
+                    <button id="reserve-button" class="btn btn-warning btn-sm btn-block" >Reserve Table</burron>
                 </div>
             </div>
         </div>
@@ -187,7 +187,7 @@
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="img/buffet.png">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                                <h1>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h1>
                                 <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>        
                             </div>
                         </div>
@@ -311,30 +311,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('#my-carousel').carousel({interval: 1000});
-        $('#carousel-button').click(function() {
-            if ($('#carousel-button').children('span').hasClass('fa-pause')) {
-                $('#my-carousel').carousel('pause');
-                $('#carousel-button').children('span').removeClass('fa-pause');
-                $('#carousel-button').children('span').addClass('fa-play');
-            } else if ($('#carousel-button').children('span').hasClass('fa-play')) {
-                $('#my-carousel').carousel('cycle');
-                $('#carousel-button').children('span').removeClass('fa-play');
-                $('#carousel-button').children('span').addClass('fa-pause');
-            }
-        });
-
-        $("#login-button").click(function () {
-            $("#loginmodal").modal('show');
-        });
-
-        $("#reserve-button").click(function () {
-            $("#reserve").modal('show');
-        });
-    });
-    </script>
+    <script src="js/scripts.js"></script>
      <!-- endbuild -->
 </body>
 
